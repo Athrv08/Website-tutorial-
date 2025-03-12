@@ -4,41 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduSelf Academy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <h1>EduSelf Academy</h1>
-        <nav>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="orbit">
+            <div class="electron"></div>
+            <div class="electron"></div>
+            <div class="electron"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- Header -->
+        <header>
+            <img src="logo.png" alt="EduSelf Academy Logo" id="logo">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </header>
+
+        <!-- Side Menu -->
+        <nav id="side-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li class="dropdown">
-                    <a href="#">Courses ▼</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Cybersecurity</a></li>
-                        <li><a href="#">Programming</a></li>
-                        <li><a href="#">Ethical Hacking</a></li>
-                        <li><a href="#">AI & ML</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Courses</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2 id="typing-text"></h2>
-        <p>Empowering Minds, Transforming Futures</p>
-        <button>Explore Courses</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 EduSelf Academy. All rights reserved.</p>
-    </footer>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Empowering Minds, Transforming Futures</h1>
+            <input type="text" placeholder="Search Courses... 🔍">
+        </section>
+    </div>
 
     <script src="script.js"></script>
 </body>
