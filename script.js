@@ -1,19 +1,12 @@
-// Loading Animation
-window.onload = function () {
-    setTimeout(() => {
-        document.querySelector(".loading-screen").style.opacity = "0";
-        setTimeout(() => {
-            document.querySelector(".loading-screen").style.display = "none";
-        }, 1000);
-    }, 2000);
-};
-
-// Sidebar Menu Toggle
-document.querySelector(".menu-btn").addEventListener("click", function () {
-    let sidebar = document.querySelector(".sidebar");
-    if (sidebar.style.right === "0px") {
-        sidebar.style.right = "-250px";
-    } else {
-        sidebar.style.right = "0px";
+document.addEventListener("DOMContentLoaded", function() {
+    let text = "EduSelf Academy is Coming Soon...";
+    let i = 0;
+    function typeWriter() {
+        if (i < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, 100);
+        }
     }
+    typeWriter();
 });
