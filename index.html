@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EduSelf Academy</title>
+    <title>GlobalXpose</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="orbit">
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="atom">
             <div class="electron"></div>
             <div class="electron"></div>
             <div class="electron"></div>
@@ -17,30 +19,32 @@
     </div>
 
     <!-- Main Content -->
-    <div id="main-content" class="hidden">
-        <!-- Header -->
-        <header>
-            <img src="logo.png" alt="EduSelf Academy Logo" id="logo">
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        </header>
+    <header>
+        <img src="logo.png" alt="GlobalXpose Logo" class="logo">
+        <div class="menu-btn">&#9776;</div>
+    </header>
 
-        <!-- Side Menu -->
-        <nav id="side-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Sidebar Menu -->
+    <nav class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Empowering Minds, Transforming Futures</h1>
-            <input type="text" placeholder="Search Courses... 🔍">
-        </section>
+    <!-- Animated Banner -->
+    <section class="banner">
+        <h1>Welcome to GlobalXpose</h1>
+        <p>Exposing the Truth, Educating the World</p>
+    </section>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" placeholder="Search Courses...">
+        <button>🔍</button>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>
