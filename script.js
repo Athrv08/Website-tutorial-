@@ -1,17 +1,19 @@
-// Hide preloader after loading
-window.onload = function() {
+// Loading Animation
+window.onload = function () {
     setTimeout(() => {
-        document.getElementById("preloader").style.display = "none";
-        document.getElementById("main-content").classList.remove("hidden");
+        document.querySelector(".loading-screen").style.opacity = "0";
+        setTimeout(() => {
+            document.querySelector(".loading-screen").style.display = "none";
+        }, 1000);
     }, 2000);
 };
 
-// Toggle Side Menu
-function toggleMenu() {
-    var menu = document.getElementById("side-menu");
-    if (menu.style.right === "0px") {
-        menu.style.right = "-250px";
+// Sidebar Menu Toggle
+document.querySelector(".menu-btn").addEventListener("click", function () {
+    let sidebar = document.querySelector(".sidebar");
+    if (sidebar.style.right === "0px") {
+        sidebar.style.right = "-250px";
     } else {
-        menu.style.right = "0px";
+        sidebar.style.right = "0px";
     }
-}
+});
