@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlobalXpose</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>EduSelf Academy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="atom">
-            <div class="electron"></div>
-            <div class="electron"></div>
-            <div class="electron"></div>
-        </div>
-    </div>
-
-    <!-- Main Content -->
+    <!-- Navigation Bar -->
     <header>
-        <img src="logo.png" alt="GlobalXpose Logo" class="logo">
-        <div class="menu-btn">&#9776;</div>
+        <h1>EduSelf Academy</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Courses ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Programming</a></li>
+                        <li><a href="#">Ethical Hacking</a></li>
+                        <li><a href="#">AI & ML</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sidebar Menu -->
-    <nav class="sidebar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Animated Banner -->
-    <section class="banner">
-        <h1>Welcome to GlobalXpose</h1>
-        <p>Exposing the Truth, Educating the World</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2 id="typing-text"></h2>
+        <p>Empowering Minds, Transforming Futures</p>
+        <button>Explore Courses</button>
     </section>
 
-    <!-- Search Bar -->
-    <div class="search-container">
-        <input type="text" placeholder="Search Courses...">
-        <button>🔍</button>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 EduSelf Academy. All rights reserved.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
